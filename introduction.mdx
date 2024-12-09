@@ -3,11 +3,26 @@ title: "Introduction"
 description: "Welcome to the home of your new documentation - Modified 4 dec 2024 by test-branch"
 ---
 
-## Securities Master Database
+## Why use this system?
 
-The security master database contains all the securities traded, together with  internally generated data  such as risk ratings and approval status.
+This system is developed to comply with regulatory requirements applicable to firms licensed by the Securities and Futures Commission in Hong Kong.
 
-It is used to generate risk reports as well as implement pre-trade controls.
+It provides various compliance-related facilities such as client onboarding, trade approvals, training and client reporting.
+
+## Trade Blotter
+
+### Introduction
+The trade blotter is used to record all the orders sent to a broker. 
+
+It is typically used to implement pre-trade controls such as trade reconciliation and perform other functions like calculate commissions.
+
+Trades are input whenever they are executed and may be sorted and filtered according to the their date, clients, asset class etc.
+
+### Securities Master Database
+
+The security master database contains all the securities traded, together with  internally generated data such as risk ratings and approval status.
+
+It is used to generate risk and client reports.
 
 ## Pre-trade Controls
 
@@ -26,4 +41,12 @@ The due diligence form can be customised to include due diligence fields such as
 
 Approvals will be logged in the database.
 Securities can be created by completing the product due diligence form.
+
+![](Screenshot2024-12-09at11.37.22PM.png)
+
+### 2. Product Approval
+
+Once the product due diligence form is completed, it can be sent to senior management for approval prior to trading.
+
+Upon approval, the security will be added to the database and become available for inclusion in the  trade blotter.
 
