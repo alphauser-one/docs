@@ -12,7 +12,8 @@ It provides various compliance-related facilities such as client onboarding, tra
 ## Trade Blotter
 
 ### Introduction
-The trade blotter is used to record all the orders sent to a broker. 
+
+The trade blotter is used to record all the orders sent to a broker.
 
 It is typically used to implement pre-trade controls such as trade reconciliation and perform other functions like calculate commissions.
 
@@ -50,3 +51,28 @@ Once the product due diligence form is completed, it can be sent to senior manag
 
 Upon approval, the security will be added to the database and become available for inclusion in the  trade blotter.
 
+## Client Statement
+
+### Introduction
+The client statement aggregates all the positions held across all custodians and shows the information in various graphical charts. 
+
+It feeds from the 'Holdings' and 'Transactions' databases whenever the are updated. 
+
+![](TotalAssets.png)
+This section of the Client Statement shows the assets excluding loans.
+
+### Distribution Charts
+
+Distribution charts show the allocation of assets according to various metrics such as country, asset wrapper, risk rating etc.
+
+The formula used to calculate this is: 'metric / denominator'. Examples of metrics are: 'country', 'risk rating', as you can see in the statements.
+
+The denominator used is 'Total Assets'.
+
+## Data Input
+
+### Loans
+
+Securities Master Database: Loans are identified under 'Asset Class' in the securities master database.
+
+Client Statement: They are excluded from the client statement's distribution pie charts.
