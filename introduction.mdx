@@ -11,21 +11,39 @@ It is typically used to implement pre-trade controls such as trade reconciliatio
 
 Trades are input whenever they are executed and may be sorted and filtered according to the their date, clients, asset class etc.
 
+### Client Database
+
+The client database contains risk information of the client, which will be fed into the trade blotter.&#x20;
+
+![](images/Screenshot2024-12-12at1.23.09AM.png)
+
 ### Securities Master Database
 
 The security master database contains all the securities traded, together with  internally generated data such as risk ratings and approval status.
 
+<Frame caption="Display of Securities Being Approved">
+  <img src="images/Screenshot2024-12-12at1.08.40AM.png" />
+</Frame>
+
 It is used to generate risk and client reports.
 
-## Pre-Trade
+## Pre-Trading
 
-### 1. Product Due Diligence
+### 1. Portfolio
+
+Portfolios should be created before trades are input in the trade blotter.
+
+<Frame caption="Custom Portfolio">
+  <img src="images/Screenshot2024-12-12at1.02.05AM.png" alt="Description of the image" />
+</Frame>
+
+### 2. Product Due Diligence
 
 Prior to trading, it may be necessary to perform due diligence, especially on complex products. This is performed by way of a due diligence form.
 
 ```mermaid
 flowchart TD 
-A([Complete Product Due Diligence Form]) --> B([Security added to Securities Master Database]) --> C([User can select security in the Trade Blotter])
+A([Complete Product Due Diligence Form]) --> B([Added Security to Securities Master Database]) --> C([Select security in the Trade Blotter])
 ```
 
 Securities are added to this database before they are traded by filling in a due diligence form.
@@ -47,4 +65,12 @@ Upon approval, the security will be added to the database and become available f
 
 ### 3. Open Orders vs Executed Orders
 
-The system allows you to input&#x20;
+Trades can be separated into Open and Executed Trades
+
+<Frame caption="Open Orders and Executed Trades">
+  <img src="images/Screenshot2024-12-12at1.15.49AM.png" />
+</Frame>
+
+When entering orders, it is necessary to select the client.
+
+![](images/Screenshot2024-12-12at1.19.49AM.png)
