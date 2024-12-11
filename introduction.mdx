@@ -1,105 +1,50 @@
 ---
 title: "Introduction"
-description: "Welcome to the helpfile of your compliance management system - Modified 4 dec 2024 by test-branch"
+description: "Welcome to the home of your new documentation - Modified 4 dec 2024 by test-branch"
 ---
 
-## Why Use This System?
-
-This system is developed to comply with regulatory requirements applicable to firms licensed by the Securities and Futures Commission in Hong Kong.
-
-It provides various compliance-related facilities such as client onboarding, trade approvals, training and client reporting.
-
-## Trading Process
-
-### Introduction
+## The Trade Blotter
 
 The trade blotter is used to record all the orders sent to a broker.
 
 It is typically used to implement pre-trade controls such as trade reconciliation and perform other functions like calculate commissions.
 
-Trades are input whenever they are executed and may be sorted and filtered according to the date, clients, asset class etc.
-
-## Key Databases
-
-The system uses multiple databases. These are: the securities master database, the transaction database and the holding database.&#x20;
+Trades are input whenever they are executed and may be sorted and filtered according to the their date, clients, asset class etc.
 
 ### Securities Master Database
 
 The security master database contains all the securities traded, together with  internally generated data such as risk ratings and approval status.
 
-It is used to generate risk and client reports and is linked to by other databases such as the Transaction Database and Holdings Database.
+It is used to generate risk and client reports.
 
-### Transaction Database
+## Pre-Trade
 
-The transaction database contains all the transactions executed by the firm. These are typically transactions recorded from bank or brokerage statements.
+### 1. Product Due Diligence
 
-### Holdings Database
-
-The holdings database contains all the holdings of the firm and typically recorded from bank or brokerage statements.
+Prior to trading, it may be necessary to perform due diligence, especially on complex products. This is performed by way of a due diligence form.
 
 ```mermaid
-  flowchart LR
-    Subgraph Transactions and Holdings
-    Transaction Database
-    Holdings Database
-    end
-    Securities Master Database --> Transactions and Holdings
+flowchart TD 
+A([Complete Product Due Diligence Form]) --> B([Security is added to Securities Master Database]) --> C([User is able to Select Security in the Trade Blotter ])
 ```
 
-## Product Due Diligence Process
+Securities are added to this database before they are traded by filling in a due diligence form.
 
-Prior to trading, it may be necessary to perform due diligence, especially on complex products. This is performed by way of completing a due diligence form.
-
-The due diligence form is typically customised to fit the needs of the firm and can include due diligence fields such as the country of issue, risk ratings and product characteristics.
-
-Completing this form will upload the product into the securities master database for later use.
-
-<Steps>
-  <Step title="Step 1: Product Due Diligence" icon="notebook" stepNumber="1">
-    Securities can be created by completing the product due diligence form.
-  </Step>
-
-  <Step title="Step 2: Securities Master Database " icon="database" stepNumber="2">
-    Products input into the form will be added to the Securities Master Database.
-  </Step>
-
-  <Step title="Step 3: Approval" icon="thumbs-up" stepNumber="3">
-    Products can be sent to senior management for approval prior to trading.
-  </Step>
-
-  <Step title="Step 4: Trade Blotter" icon="arrow-trend-up" stepNumber="4">
-    User is now able to select the security in the Trade Blotter to input trades
-  </Step>
-</Steps>
+The due diligence form can be customised to include due diligence fields such as the country of issue, risk ratings and product characteristics.
 
 Approvals will be logged in the database.
 Securities can be created by completing the product due diligence form.
 
 ![](Screenshot2024-12-09at11.37.22PM.png)
 
-## Client Statement Facility
+### 2. Approval
 
-### Introduction
+Once the product due diligence form is completed, it can be sent to senior management for approval prior to trading.
 
-The client statement aggregates all the positions held across all custodians and shows the information in various graphical charts.
+Upon approval, the security will be added to the database and become available for inclusion in the  trade blotter.
 
-It feeds from the 'Holdings' and 'Transactions' databases whenever the are updated.
+## Trading
 
-![](TotalAssets.png)
-This section of the Client Statement shows the assets excluding loans.
+### 3. Open Orders vs Executed Orders
 
-### Distribution Charts
-
-Distribution charts show the allocation of assets according to various metrics such as country, asset wrapper, risk rating etc.
-
-The formula used to calculate this is: 'metric / denominator'. Examples of metrics are: 'country', 'risk rating', as you can see in the statements.
-
-The denominator used is 'Total Assets'.
-
-## Inputting Data
-
-### Loans
-
-Securities Master Database: Loans are identified under 'Asset Class' in the securities master database.
-
-Client Statement: They are excluded from the client statement's distribution pie charts.
+The system allows you to input&#x20;
