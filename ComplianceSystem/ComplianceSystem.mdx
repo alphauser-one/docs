@@ -22,6 +22,7 @@ Below are a summary of the tools used in our system.
 All tools are used within a process.
 
 ### Trade Blotter
+
 The trade blotter is used to record all the orders sent to a broker.
 
 It is typically used to implement pre-trade controls such as trade reconciliation and perform other functions like calculate commissions.
@@ -29,16 +30,19 @@ It is typically used to implement pre-trade controls such as trade reconciliatio
 Trades are input whenever they are executed and may be sorted and filtered according to their date, clients, asset class etc.
 
 ### Holdings Database
+
 This database contains positions and is either input manually or calculated from the trade blotter. It is used to generate risk reports.
 
 Instead of calculating the positions from the trade block, it is also possible to input information from bank statements in order to aggregate positions for clients who have accounts with multiple custodians.
 
 ### Client Database
+
 The client database contains information of the client, which will be fed into the trade blotter, used to generate risk reports and perform AML.&#x20;
 
 ![](images/Screenshot2024-12-12at1.23.09AM.png)
 
 ### Securities Master Database
+
 The security master database contains all the securities traded, together with  internally generated data such as risk ratings and approval status.
 
 <Frame caption="Display of Securities Being Approved">
@@ -46,7 +50,9 @@ The security master database contains all the securities traded, together with 
 </Frame>
 
 ### Staff Database
+
 The Staff database allows you to keep track of staff information such as CPT, external roles as well as their declarations.
 
 ### Partner Database
+
 The partner database contains information about all your Trading counter parties. Information such as commission rebates are included. This is used to estimate commissions generated from trades put into the trade blotter.

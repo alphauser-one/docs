@@ -1,13 +1,13 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "Alpha Calibration Compliance System",
   "logo": {
     "dark": "/logo/dark.svg",
     "light": "/logo/light.svg"
   },
   "favicon": "/favicon.svg",
   "colors": {
-    "primary": "#0D9373",
+    "primary": "#196682",
     "light": "#07C983",
     "dark": "#0D9373",
     "anchors": {
@@ -22,65 +22,46 @@
     }
   ],
   "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "name": "Homepage",
+    "url": "https://alphacalibration.com"
   },
   "tabs": [
     {
-      "name": "API Reference",
-      "url": "api-reference"
-    }
-  ],
-  "anchors": [
-    {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
+      "name": "ComplianceSystem",
+      "url": "ComplianceSystem/Compliance System"
     },
     {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
+      "name": "ClientManagement",
+      "url": "ClientManagement"
     },
     {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "name": "Trading",
+      "url": "trading"
+    },
+    {
+      "name": "StaffManagement",
+      "url": "StaffManagement"
     }
   ],
   "navigation": [
     {
-      "group": "Get Started",
+      "group": "Client Management",
       "pages": [
-        "Compliance System",
-        "development",
-        "processes",
-        "regulations"
+        "ClientManagement/ClientOnboarding",
+        "ClientManagement/ClientReporting",
+        "ClientManagement/ClientNotifications"
       ]
     },
     {
-      "group": "Essentials",
+      "group": "Trading",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
+        "trading/trading"
       ]
     },
     {
-      "group": "API Documentation",
+      "group": "Staff Management",
       "pages": [
-        "api-reference/introduction"
-      ]
-    },
-    {
-      "group": "Endpoint Examples",
-      "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "StaffManagement/StaffManagement"
       ]
     }
   ],
