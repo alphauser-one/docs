@@ -27,19 +27,19 @@
   },
   "tabs": [
     {
-      "name": "ComplianceSystem",
-      "url": "ComplianceSystem"
+      "name": "System",
+      "url": "System"
     },
     {
-      "name": "ClientManagement",
+      "name": "Clients",
       "url": "ClientManagement"
     },
     {
       "name": "Trading",
-      "url": "trading"
+      "url": "Trading"
     },
     {
-      "name": "StaffManagement",
+      "name": "Staff",
       "url": "StaffManagement"
     }
   ],
