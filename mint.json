@@ -41,7 +41,11 @@
     {
       "name": "Staff",
       "url": "StaffManagement"
-    }
+    },
+    {
+    "name" : "RiskManagement",
+    "url": "RiskManagement"
+    }]
   ],
   "navigation": [
     {
