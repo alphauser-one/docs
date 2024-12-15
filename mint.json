@@ -55,13 +55,19 @@
     {
       "group": "Trading",
       "pages": [
-        "trading/trading"
+        "Trading/trading"
       ]
     },
     {
       "group": "Staff Management",
       "pages": [
         "StaffManagement/StaffManagement"
+      ]
+    },
+    {
+      "group": "System",
+      "pages": [
+        "System/ComplianceSystem"
       ]
     }
   ],
