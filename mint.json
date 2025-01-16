@@ -65,10 +65,11 @@
             ]
         },
         {
-            "group": "",
+            "group": "System",
             "pages": [
                 "System/ComplianceSystem",
-                "System/Services"
+                "System/Services",
+                "dashboard"
             ]
         }
     ],
