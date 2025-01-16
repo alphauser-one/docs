@@ -69,7 +69,7 @@
             "pages": [
                 "System/ComplianceSystem",
                 "System/Services",
-                "dashboard"
+                "System/dashboard"
             ]
         }
     ],
