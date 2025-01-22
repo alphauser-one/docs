@@ -71,6 +71,12 @@
                 "System/Services",
                 "System/dashboard"
             ]
+        },
+      {
+            "group": "Other Functions",
+            "pages": [
+                "OtherFunctions/API"
+            ]
         }
     ],
     "footerSocials": {
